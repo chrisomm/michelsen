@@ -1,0 +1,159 @@
+.abstand {
+  margin-left:50px;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+/* button hyperlink button */
+.arrow-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+}
+
+.arrow-button::after {
+    content: ' →';
+    font-weight: bold;
+}
+
+/* background image */
+.background-image {
+    width: 100%;
+    height: 300px; /* Höhe des Elements */
+    background-image: url('images/IMG_michelsen_building.jpg');
+    background-size: cover; /* Deckt das Element vollständig ab */
+    background-position: center; /* Zentriert das Bild */
+}
+
+.myimage {
+    height: 30%;
+    width: 30%;
+    align: center;
+}
+
+/* laufender text */
+.container {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Höhe des Bildes */
+    overflow: hidden; /* Verhindert, dass der Text außerhalb sichtbar ist */
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/IMG_michelsen_building.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.marquee-text {
+    position: absolute;
+    top: 50%; /* Vertikale Zentrierung */
+    left: -100%; /* Startposition außerhalb des Bildes */
+    transform: translateY(-50%); /* Zentriert den Text vertikal */
+    white-space: nowrap; /* Verhindert Zeilenumbrüche */
+    animation: marquee 10s linear infinite; /* Animationseinstellungen */
+    font-size: 20px;
+}
+
+@keyframes marquee {
+    0% {
+        left: -100%; /* Startposition */
+    }
+    100% {
+        left: 100%; /* Endposition */
+    }
+}
+
+/* increasing image size css transformation */
+.image-container {
+    overflow: hidden; /* Verhindert, dass das Bild über den Container hinausragt */
+    display: inline-block; /* Erlaubt die Anpassung der Größe */
+}
+
+.image-container img {
+    width: 300px; /* Basisbreite des Bildes */
+    transition: transform 0.3s ease; /* Übergangseffekt für die Transformation */
+}
+
+.image-container img:hover {
+    transform: scale(1.1); /* Vergrößerung des Bildes */
+}
+
+/* graphics and animations */
+.rectangle {
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    margin: 20px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%; /* Macht es zu einem Kreis */
+    margin: 20px;
+}
+.pulsing-circle {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50%;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* grid layout column sizes */
+ .container {
+    display: flex; /* Flexbox aktivieren */
+    flex-wrap: wrap; /* Zeilenumbruch ermöglichen */
+}
+
+.column {
+    flex: 1; /* Alle Spalten gleichmäßig verteilen */
+    padding: 10px;
+    min-width: 200px; /* Minimale Breite der Spalte */
+}
+
+/* 4 images in a grid */
+.grid-container {
+    display: grid; /* Aktiviert das Grid-Layout */
+    grid-template-columns: repeat(2, 1fr); /* Zwei Spalten */
+    gap: 10px; /* Abstand zwischen den Bildern */
+    max-width: 600px; /* Maximale Breite des Containers */
+    margin: auto; /* Zentriert den Container */
+}
+
+.grid-item {
+    width: 100%; /* Breite des Bildes anpassen */
+    height: auto; /* Höhe automatisch anpassen */
+}
+
+/* responsive desing */
+@media (max-width: 768px) {
+    /* Styles for smaller screens */
+    .abstand {
+        margin-left: 0px;
+    }
+}
+
+
