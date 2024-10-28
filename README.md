@@ -1,2 +1,2 @@
 # michelsen
-HTML an CSS Showcase
+HTML and CSS Showcase
