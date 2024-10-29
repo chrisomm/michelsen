@@ -1,5 +1,5 @@
 .abstand {
-  margin-left:50px;
+  margin-left: 300px;
 }
 
 div {
@@ -30,11 +30,17 @@ div {
     background-size: cover; /* Deckt das Element vollständig ab */
     background-position: center; /* Zentriert das Bild */
 }
+/* oder übergeordnet inline-flex */
+.mydiv {
+    width: 50%;
+    float: left;
+}
 
 .myimage {
-    height: 30%;
-    width: 30%;
+    height: 50%;
+    width: 50%;
     align: center;
+    border: 10px solid green;
 }
 
 /* laufender text */
@@ -60,7 +66,7 @@ div {
     transform: translateY(-50%); /* Zentriert den Text vertikal */
     white-space: nowrap; /* Verhindert Zeilenumbrüche */
     animation: marquee 10s linear infinite; /* Animationseinstellungen */
-    font-size: 20px;
+    font-size: 48px;
 }
 
 @keyframes marquee {
@@ -84,7 +90,7 @@ div {
 }
 
 .image-container img:hover {
-    transform: scale(1.1); /* Vergrößerung des Bildes */
+    transform: scale(1.4); /* Vergrößerung des Bildes */
 }
 
 /* graphics and animations */
@@ -148,7 +154,7 @@ div {
     height: auto; /* Höhe automatisch anpassen */
 }
 
-/* responsive desing */
+/* responsive desing media queries also orientation */
 @media (max-width: 768px) {
     /* Styles for smaller screens */
     .abstand {
