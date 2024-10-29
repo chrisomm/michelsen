@@ -1,4 +1,4 @@
-# michelsen
+# Projekt Michelsen
 HTML and CSS Showcase für 12. Klasse BIF
 
 # Link zur Präsentation
@@ -24,3 +24,8 @@ Einbetten auswählen: Wähle die Option „Karte einbetten“ (Embed a map).
 Größe auswählen: Du kannst die Größe des iFrames anpassen (klein, mittel, groß oder benutzerdefiniert).
 HTML-Code kopieren: Kopiere den bereitgestellten HTML-Code.
 iFrame in deine Webseite einfügen: Füge den kopierten Code an die gewünschte Stelle in deinem HTML-Dokument ein.
+
+# Weitere Quellen
+https://entwickler.de/recht-netzkultur/zeitreise-die-anfange-des-internets-und-html-webstandards
+
+https://blog.hubspot.de/website/css-grundlagen
