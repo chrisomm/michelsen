@@ -1,5 +1,5 @@
 # Projekt Michelsen
-HTML and CSS Showcase für 12. Klasse BIF
+HTML und CSS Showcase für 12. Klasse BIF
 
 # Link zur Präsentation
 https://prezi.com/view/1Kk0UXz3xIuWZfbfvTDf/
